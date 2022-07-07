@@ -1,22 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import Editor from './components/editor';
+import Previewer from './components/previewer';
+
+const App = () => {
   return (
     <div className="App">
+      {/* <h1>kek</h1>
+      <img src='https://tndvjd.github.io/pop-cat/images/normal.png'
+        alt='popcat pic'/> */}
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Editor />
+        <Previewer />
       </header>
     </div>
   );
