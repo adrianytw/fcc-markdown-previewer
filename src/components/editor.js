@@ -1,6 +1,8 @@
 import { useSelector, useDispatch } from "react-redux/es/exports"
 import { update } from "../features/editorSlice"
 
+import './editor.css'
+
 const Editor = () => {
 
   const { input } = useSelector( (state) => state.editor )
